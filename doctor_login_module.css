@@ -11,11 +11,11 @@ ol {
     background-color: #333;
 }
 
-li {
+ol li {
     float: left;
 }
 
-li a {
+ol li a {
     display: block;
     color: white;
     text-align: center;
@@ -23,7 +23,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
+ol li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -32,10 +32,12 @@ li a:hover:not(.active) {
     padding-left: 15px;
 }
 
-.active {
-    background-color: #4CAF50;
-}
-
 #search-bar{
     border-radius: 20px;
+}
+h1{
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
 }
