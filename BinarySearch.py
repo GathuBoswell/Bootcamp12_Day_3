@@ -17,8 +17,9 @@ class BinarySearch(list):
         count = 0
         self._upper_bound = self.length - 1
         self._lower_bound = 0
-
-        if search_item not in self._num_list or not self._num_list:
+        if not self._num_list:
+            return 'Given Input Parameters are invlaid'
+        elif search_item not in self._num_list:
             return {'count': count, 'index' : -1}
         else:
             if self._lower_bound <= self._upper_bound and not found:
@@ -42,7 +43,7 @@ class BinarySearch(list):
 
 def main():
     #
-    print(BinarySearch(100, 'yeey').search(4))
+    print(BinarySearch(100, {}).search(4))
     print(BinarySearch(100, 10).search(880))
     print(BinarySearch(20, 2).search(40))
 
