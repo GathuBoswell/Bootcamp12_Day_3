@@ -1,8 +1,9 @@
+/*Web page back ground*/
 body{
     background-color: aquamarine;
 }
 
-
+/*Nav bar rendering*/
 ol {
     list-style-type: none;
     margin: 0;
@@ -22,29 +23,43 @@ ol li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-
+/*Changes the background of the item hovered over*/
 ol li a:hover:not(.active) {
     background-color: #111;
 }
-
+/* rendering of the search and the logout button*/
 .left_item{
     float: right;
     padding-left: 15px;
 }
-
+/*search bar rendering*/
 #search-bar{
     border-radius: 20px;
 }
+/*all h1 rendering*/
 h1{
     font-size: 2em;
     margin: 0;
     padding: 0;
     padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-ol .in_type{
-    list-style-type: upper-latin;
+/*All h6 formatting*/
+h6 {
+    color: blue;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-size: 16px;
+
 }
+/*all paragraphs*/
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+}
+/*section formatting*/
 section{
     width: 80%;
     background-color: white;
@@ -55,3 +70,14 @@ section{
     border-width: 5px;
     padding: 5px;
 }
+/*footer*/
+footer{
+    width: 80%;
+    background-color: black;
+    color: white;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    height: 50px;
+}
+
