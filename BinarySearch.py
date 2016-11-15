@@ -1,5 +1,4 @@
 class BinarySearch(list):
-
     def __init__(self, length, step):
         super(BinarySearch, self).__init__(range(step, (length * step) + 1, step))
         self.__length = length
@@ -7,11 +6,6 @@ class BinarySearch(list):
         self._count = 0
         self._upper_bound = length - 1
         self._lower_bound = 0
-
-        # for x in range(self.__length):
-        #     list.append(self, self._step)
-        #     self._step += step
-
     @property
     def length(self):
         return self.__length
