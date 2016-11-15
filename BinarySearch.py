@@ -41,6 +41,7 @@ class BinarySearch(list):
 
 
 def main():
+    #
     print(BinarySearch(100, 'yeey').search(4))
     print(BinarySearch(100, 10).search(880))
     print(BinarySearch(20, 2).search(40))
