@@ -6,17 +6,19 @@ class BinarySearch(list):
             self.__length = list_length
         else:
             self._num_list = []
+            list.__init__(self, self._num_list)
 
     @property
     def length(self):
-        return self.__length
+        return len(self._num_list)
 
     def search(self, search_item):
         found = False
         count = 0
         self._upper_bound = self.length - 1
         self._lower_bound = 0
-        if search_item not in self._num_list:
+
+        if search_item not in self._num_list or not self._num_list:
             return {'count': count, 'index' : -1}
         else:
             if self._lower_bound <= self._upper_bound and not found:
@@ -39,7 +41,7 @@ class BinarySearch(list):
 
 
 def main():
-    print(BinarySearch(100, 'yeey'))
+    print(BinarySearch(100, 'yeey').search(4))
     print(BinarySearch(100, 10).search(880))
     print(BinarySearch(20, 2).search(40))
 
