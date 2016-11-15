@@ -1,10 +1,10 @@
 class BinarySearch(list):
     def __init__(self, list_length, step):
-        if type(list_length) == int and (type(step) == int):
+        try:
             self._num_list = range(step, (list_length * step) + 1, step)
             list.__init__(self, self._num_list)
             self.__length = list_length
-        else:
+        except TypeError:
             self._num_list = []
             list.__init__(self, self._num_list)
 
