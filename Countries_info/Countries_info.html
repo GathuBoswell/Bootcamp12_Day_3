@@ -41,11 +41,8 @@
                     <li>Simple Interface</li>
                     <li>Advanced Interface</li>
                 </ul>
-            <p>The simple part of the app just returns results as they have been searched,
-                e.g search by country returns all the information of the Country, but the Advanced part
-                first takes a simple search parameter like a country name or currency and the refined
-                searches can be performed on the results obtained e.g starting with all countries, refine
-                by getting only countries which border tunisia and have languages like french</p>
+            <p>The simple part of the app just returns results as they have been searched as
+                shown below there are choices to choose from;</p>
             <pre>
                          Welcome to Country info Data Search
                          ###################################
@@ -64,8 +61,80 @@
 
                 Enter Your Choice: _
             </pre>
+            <h6>By Country</h6>
+            <p> When you choose 1, you are prompted to enter the country name, Country names
+                are the normal country names e.g Kenya, USA, Mexico or Uganda</p>
+            <h6>By Country Code</h6>
+            <p> When you choose 2, you are prompted to enter the country code, Country Codes
+                are the normal country names e.g ke for Kenya, USA for USA, tz for Tanzania,
+                ug for uganda, rus for Russia</p>
+            <h6>All for all countries</h6>
+            <p> When you choose 3, you are not prompted to enter anything since the default is
+                'all' to get all the data available for all the Countries</p>
+            <h6>By Region</h6>
+            <p> When you choose 4, you are not prompted to enter Region. The world is divided
+                into regions, for any region entered all the countries in that region will be
+                returned together wih their data, regions include, Africa, Asia, Americas,
+                Europe n so forth</p>
+            <h6>By SubRegion</h6>
+            <p> When you choose 5, you are not prompted to enter SubRegion. The world is further
+                divided into sub-regions, for any sub-region entered all the countries in that
+                sub - region will be returned together wih their data, sub-regions include,
+                Eastern - Africa, Western Asia, South America n so forth</p>
+            <h6>By Country Capital City</h6>
+            <p> When you choose 6, you are prompted to enter the country capital city, Capital cities
+                are the normal capital city names e.g Nairobi for Kenya, New York for USA,
+                Dar es salaam for Tanzania, Kampala for uganda</p>
+            <h6>By Calling Code</h6>
+            <p> When you choose 7, you are prompted to enter the calling code, calling codes are
+                hose pre-appended to a number before calling, they identify the country of the
+                person being called e.g  1 for USA, 254 for Kenya, 238 for cape verde, 236 for
+                Congo</p>
+            <h6>By ISO 639-1 Language</h6>
+            <p> When you choose 8, you are prompted to enter the language, ISO 639-1 language is
+                an abbreviation format, e.g en for English, aa for Afar, fr for french
+                this codes can be found <a href="https://www.loc.gov/standards/iso639-2/php/code_list.php">here</a></p>
+            <p>Sample outputs are as follows</p>
+            <pre>
+                Enter Your Choice: 1
+                Enter The country name: kenya
 
-            <p></p>
+                Country          Capital       Region      SubReg            Population     Area(sqKM)   Codes      Currency          Lang
+                -------          -------       ------      ------            ----------     ----------   -----       --------         ----
+                Kenya            Nairobi       Africa      Eastern Africa    46050000       580367.0     ['254']     ['KES']          ['en', 'sw']
+            </pre>
+            <pre>
+                Enter Your Choice: 2
+                Enter The country code e.g ke for Kenya: rus
+
+                Country       Capital      Region      SubReg            Population     Area(sqKM)    Codes       Currency         Lang
+                -------       -------      ------      ------            ----------     ----------     -----     --------          ----
+                Russia        Moscow        Europe     Eastern Europe    146556330      17124442.0     ['7']       ['RUB']         ['ru']
+            </pre>
+            <pre>
+                Enter Your Choice: 4
+                Enter The Region e.g Africa: Africa
+
+                Country                        Capital              Region          SubReg             Population      Area(sqKM)      Codes           Currency       Lang
+                -------                        -------              ------          ------             ----------      ----------      -----           --------       ----
+                Algeria                        Algiers              Africa          Northern Africa    39500000        2381741.0       ['213']         ['DZD']        ['ar']
+                Angola                         Luanda               Africa          Middle Africa      24383301        1246700.0       ['244']         ['AOA']        ['pt']
+                Benin                          Porto-Novo           Africa          Western Africa     10315244        112622.0        ['229']         ['XOF']        ['fr']
+                Botswana                       Gaborone             Africa          Southern Africa    2070984         582000.0        ['267']         ['BWP']        ['en', 'tn']
+                British Indian Ocean Territor  Diego Garcia         Africa          Eastern Africa     3000            60.0            ['246']         ['USD']        ['en']
+                Burkina Faso                   Ouagadougou          Africa          Western Africa     18450494        272967.0        ['226']         ['XOF']        ['fr', 'ff']
+                Burundi                        Bujumbura            Africa          Eastern Africa     9823827         27834.0         ['257']         ['BIF']        ['fr', 'rn']
+                Cameroon                       Yaoundé              Africa          Middle Africa      23344000        475442.0        ['237']         ['XAF']        ['en', 'fr']
+                Cape Verde                     Praia                Africa          Western Africa     524833          4033.0          ['238']         ['CVE']        ['pt']
+                Central African Republic       Bangui               Africa          Middle Africa      4900000         622984.0        ['236']         ['XAF']        ['fr', 'sg']
+                Chad                           N'Djamena            Africa          Middle Africa      14037000        1284000.0       ['235']         ['XAF']        ['fr', 'ar']
+                Comoros                        Moroni               Africa          Eastern Africa     784745          1862.0          ['269']         ['KMF']        ['ar', 'fr']
+                Republic of the Congo          Brazzaville          Africa          Middle Africa      4620000         342000.0        ['242']         ['XAF']        ['fr', 'ln']
+                Democratic Republic of the Co  Kinshasa             Africa          Middle Africa      77267000        2344858.0       ['243']         ['CDF']        ['fr', 'ln', 'kg', 'sw', 'lu']
+            </pre>
+
+
+
         </article>
     </section>
 
